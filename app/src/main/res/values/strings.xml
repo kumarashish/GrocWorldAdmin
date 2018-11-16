@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GrocWorld_Admin</string>
+    <string name="forgetpasswordhint">Enter your email address below and we will send<br/> new password to your email id.</string>
+</resources>

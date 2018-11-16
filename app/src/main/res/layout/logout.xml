@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:gravity="center"
+
+        android:background="@drawable/rectangle"
+        android:orientation="vertical"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <common.Bold_TextView
+            android:padding="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/black_color"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+
+            android:text="Are you sure you want to logout ?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/yes"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:text="Yes"
+            android:background="@drawable/purple_button"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+        <Button
+            android:id="@+id/no"
+            android:layout_marginRight="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:text="No"
+            android:background="@drawable/purple_button"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

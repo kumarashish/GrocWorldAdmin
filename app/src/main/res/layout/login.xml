@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+                <ImageView
+
+                    android:src="@drawable/logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp" />
+                <RelativeLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/email_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <EditText
+                        android:id="@+id/emailId"
+                        android:paddingLeft="15dp"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorPrimary"
+                        android:singleLine="true"
+                        android:hint="Email"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="14dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/edittext_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/pwd_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+                    <EditText
+                        android:id="@+id/password"
+                        android:textColor="@color/colorPrimary"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="15dp"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:hint="Password"
+                        android:textSize="14dp"
+                        android:textColorHint="@color/colorPrimary"
+                        android:layout_marginRight="40dp"
+                        android:background="@color/white"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="45dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+
+                        android:id="@+id/forgetPassword"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/pwd_help_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+
+                </RelativeLayout>
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:textSize="14dp"
+                    android:layout_marginTop="10dp"
+                    android:buttonTint="@color/colorPrimary"
+                    android:text="Remember Me"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="30dp"
+                    android:layout_gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/login_btn"
+                        android:textColor="@color/white"
+                        android:text="LOGIN"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/purple_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

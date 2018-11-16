@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back"
+                android:layout_marginLeft="-20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <common.Bold_TextView
+                android:textSize="20dp"
+                android:id="@+id/heading"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="Current Orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ListView
+
+                android:id="@+id/productList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearLayout"
+                android:layout_toEndOf="@+id/noItem"
+
+                android:layout_toRightOf="@+id/noItem"
+                android:divider="@null"
+                android:dividerHeight="4dp"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+            <LinearLayout
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout">
+            <LinearLayout
+               android:visibility="gone"
+                android:id="@+id/toalView"
+                android:background="@drawable/rsz_invoice_icon"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="2"
+                >
+                <common.Bold_TextView
+                    android:text="Total"
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+                <common.Bold_TextView
+                    android:id="@+id/totalCost"
+                    android:text=""
+                    android:textSize="18dp"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/status_update"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:text="Update Status"
+                    android:textAllCaps="false"
+                    android:background="@drawable/purple_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+                <common.Bold_TextView
+                    android:id="@+id/noItem"
+                    android:visibility="gone"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:text="No orders "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+
+        </RelativeLayout>
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ashish.grocworld_admin.DashBoard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+ <LinearLayout
+     android:orientation="vertical"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <RelativeLayout
+         android:background="@color/colorPrimary"
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="45dp">
+
+         <common.Bold_TextView
+             android:textSize="20dp"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+             android:textColor="@color/white"
+             android:text="Orders"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+         <ImageView
+             android:id="@+id/logout"
+             android:layout_marginRight="10dp"
+             android:layout_alignParentRight="true"
+             android:src="@drawable/logout"
+             android:layout_width="40dp"
+             android:layout_height="340dp" />
+
+
+     </RelativeLayout>
+     <ProgressBar
+         android:visibility="gone"
+         android:id="@+id/progressbar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+     <common.Bold_TextView
+         android:id="@+id/date"
+         android:gravity="center"
+         android:textColor="@color/colorPrimary"
+         android:textSize="20dp"
+         android:layout_margin="5dp"
+         android:text="Date"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+     <EditText
+         android:id="@+id/search"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:background="@drawable/edittext_bg"
+         android:textColor="@color/black_color"
+         android:singleLine="true"
+         android:textSize="14dp"
+         android:hint="Type Customer name for search"
+         android:paddingRight="10dp"
+         android:paddingLeft="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="40dp" />
+     <ListView
+         android:layout_marginTop="10dp"
+         android:id="@+id/orderList"
+
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"/>
+     <common.Bold_TextView
+         android:id="@+id/noItem"
+         android:visibility="gone"
+         android:textSize="20dp"
+         android:gravity="center"
+         android:text="No orders "
+         android:layout_width="match_parent"
+         android:layout_height="match_parent" />
+
+ </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
